@@ -1,0 +1,25 @@
+{
+  "name": "harbinger-paindrome-detector",
+  "version": "0.1.0",
+  "description": "Complex palindrome Detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyhacker101/palindrome_detector.git"
+  },
+  "keywords": [
+    "palindrome",
+    "detector",
+    "javascript",
+    "harbinger"
+  ],
+  "author": "Saurabh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crazyhacker101/palindrome_detector/issues"
+  },
+  "homepage": "https://github.com/crazyhacker101/palindrome_detector#readme"
+}

@@ -1,4 +1,4 @@
-'use strict';
+module.exports = Phrase;
 
 String.prototype.reverse = function () {
     return Array.from(this).reverse().join('');
@@ -20,6 +20,3 @@ function Phrase(content) {
         return this.processedContent() === this.processedContent().reverse();
     }
 }
-
-let phrase = new Phrase("Ababac");
-console.log(phrase.isPalindrome());
