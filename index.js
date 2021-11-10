@@ -17,11 +17,11 @@ function Phrase(content) {
     }
 
     this.getLetters = function () {
-        let onlyLetters = '';
-        Array.from(this.content).forEach(character => {
-            if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')) onlyLetters += character;
-        });
-        return onlyLetters;
+        return Array.from(this.content).filter(character => {
+            if(character >= 'a' && character <= 'z' || character >= 'A' && character <= 'Z') {
+                return character;
+            }
+        }).join('');
     }
 
     this.isPalindrome = function () {
