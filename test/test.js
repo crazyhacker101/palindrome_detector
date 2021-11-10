@@ -30,6 +30,11 @@ describe("Phrase", function () {
                 let phrase = new Phrase("Madam, I’m Adam.");
                 assert.strictEqual(phrase.getLetters(), "MadamImAdam");
             });
+
+            it("should return empty string for no match", function() {
+                let phrase = new Phrase("1234.56");
+                assert.strictEqual(phrase.getLetters(), "");
+            });
         });
 
     });

@@ -1,5 +1,5 @@
 {
-  "name": "harbinger-paindrome-detector",
+  "name": "harbinger-palindrome-detector",
   "version": "0.1.0",
   "description": "Complex palindrome Detector",
   "main": "index.js",
