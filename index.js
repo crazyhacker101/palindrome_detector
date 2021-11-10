@@ -13,7 +13,15 @@ function Phrase(content) {
     }
 
     this.processedContent = function () {
-        return this.getLowerCase(this.content);
+        return this.getLowerCase(this.getLetters(this.content)); 
+    }
+
+    this.getLetters = function () {
+        let onlyLetters = '';
+        Array.from(this.content).forEach(character => {
+            if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')) onlyLetters += character;
+        });
+        return onlyLetters;
     }
 
     this.isPalindrome = function () {
