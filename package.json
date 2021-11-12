@@ -1,6 +1,6 @@
 {
   "name": "harbinger-complex-palindrome-detector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Complex palindrome Detector",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "detector",
     "javascript",
     "harbinger",
-    "complex" 
+    "complex"
   ],
   "author": "Saurabh Kumar",
   "license": "ISC",
