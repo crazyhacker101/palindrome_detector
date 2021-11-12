@@ -13,7 +13,7 @@ function Phrase(content) {
     }
 
     this.processedContent = function () {
-        return this.getLowerCase(this.getLetters(this.content)); 
+        return this.getLowerCase(this.getLetters()); 
     }
 
     this.getLetters = function () {
@@ -25,6 +25,11 @@ function Phrase(content) {
     }
 
     this.isPalindrome = function () {
-        return this.processedContent() === this.processedContent().reverse();
+        let finalString = this.processedContent();
+        if(!!finalString) {
+            return finalString === finalString.reverse();
+        } else {
+            return false;
+        }   
     }
 }

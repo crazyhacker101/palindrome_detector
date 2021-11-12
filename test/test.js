@@ -22,7 +22,12 @@ describe("Phrase", function () {
         it("should return true for a palindrome with punctuation", function() {
             let punctuatedPhrase = new Phrase("Madam, I’m Adam.");
             assert(punctuatedPhrase.isPalindrome());
-        });  
+        });
+        
+        it("should return false for a number as a string", function() {
+            let phrase = new Phrase("12345.56");  
+            assert(phrase.isPalindrome() === false);
+        });
 
         describe("#getLetters", function() {
             
